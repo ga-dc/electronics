@@ -1,0 +1,7 @@
+<% @items.each do |item| %>
+  <li class='item'>
+    <h3><%= item.name %></h3>
+    <%= image_tag item.image_url %>
+    <%= item.description %>
+  </li>
+<% end %>
