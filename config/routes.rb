@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
-  resources :items
+  resources :items do
+    resources :borrowings
+  end
 
   root to: "home#show"
 end

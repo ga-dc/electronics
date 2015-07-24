@@ -1,0 +1,15 @@
+<%= form_for [@item, @borrowing] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.label :course %>
+  <%= f.text_field :course %>
+  <br>
+  <%= f.label :due_date %>
+  <%= f.date_field :due_date %>
+
+  <%= f.submit %>
+<% end %>
